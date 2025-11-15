@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgStar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/star" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvName"
+        android:layout_toEndOf="@id/imgStar"
+        android:layout_marginStart="16dp"
+        android:text="Nom"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/rating"
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@id/imgStar"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/idss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+</RelativeLayout>
